@@ -1,31 +1,72 @@
 @charset "UTF-8";
-
+/*#E2C044 #392061 #F4F4F9 #1985A1 #6290C3 #BDEDE0*/
 *{
     margin: 0;
     padding: 0;
 }
+nav {
+    position: fixed;
+    width: 200px;
+}
+.social-media {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1px;
+}
+
+.social-media a{
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.social-media a:hover{
+    font-size: 1.7em;
+    color: #E2C044;
+    transition: 0.3s;
+}
 
 #titulo{
     font-family: sans-serif;
-    color: #380b61;
+    color: #E2C044;
     margin-left: 7%;
 }
 #subtitulo {
     font-family: sans-serif;
-    color: #380b61;
+    color: #F4F4F9;
     margin-left: 10%;
 }
-
+.cabecalho {
+    width: 100%;
+    background-color: #380b61;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding-bottom: 2em;
+    padding-top: 1em;
+}
+main {
+    display: block;
+    background-color: #F4F4F9;
+    width: 37em;
+    border-radius: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0.1em;
+    box-shadow: 1px 1px 3px #000000;
+}
 fieldset {
     border: 0;
 }
 body {
-    background-color: #F0F8FF;
+    width: 100%;
+    background-image: URL('../images/background.jpg');
     font-family: sans-serif;
     font-size: 1em;
     color: #59429d;
-    margin-left: 36%;
-    margin-top: 2%;
+    margin-left: 1.3em;
+    margin-top: 1%;
     justify-content: center; 
 }
 
@@ -33,53 +74,73 @@ input, select, textarea, button{
     border-radius: 5px;
 }
 .campo {
+    margin-left: 1.3em;
     margin-bottom: 1em;
 }
 
 .campo label{
     display: block;
     margin-bottom: 0.2em;
-    color: #59429c;
+    color: #380b61;
 }
 
 fieldset.grupo .campo{
     float: left;
     margin-right: 1em;
 }
+fieldset.grupo {
+    margin-top: 1em;
+}
 
 .campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea{
     display: block;
     padding: 0.2em;
-    border: 1px solid #59429d;
+    border: 1px solid #1985A1;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    margin-right: 1.3em;
 }
 .campo select option{
     padding-right: 1em;
 }
 .campo input:focus, .campo select:focus, .campo textarea:focus{
-    background: #E0E0f8;
+    background: rgba(226, 192, 68, 0.40);
+}
+.campo select{
+    width: 15em;
+    height: 2em;
+}
+.campo input#nome,.campo input#email, .campo input#sobrenome{
+    width: 16em;
+    height: 1.5em;
+    transition: 1s;
+}
+.campo input#nome:hover, input#email:hover, input#sobrenome:hover{
+    width: 18em;
+    height: 2em;
+    transition: 1s;
 }
 .botao {
     font-size: 1.2em;
-    background: #59429d;
+    background: #380b61;
     border: 0;
     margin-bottom: 1em;
     color: #ffffff;
     padding: 0.2em 0.6em;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50% -50%);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 .botao:hover {
-    background-color: #ccbbff;
+    background-color: #E2C044;
+    color: #F4F4F9;
     box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
     text-shadow: none;
 }
 
 #check {
+    margin-left: 1.3em;
     display: inline-block;
 }
+
