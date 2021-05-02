@@ -60,11 +60,11 @@ fieldset {
     border: 0;
 }
 body {
-    width: 100%;
-    background-image: URL('../images/background.jpg');
+    width: auto;
+    background-image: URL('../images/background-redimencionado.jpg');
     font-family: sans-serif;
     font-size: 1em;
-    color: #59429d;
+    color: #380b61;
     margin-left: 1.3em;
     margin-top: 1%;
     justify-content: center; 
@@ -98,6 +98,7 @@ fieldset.grupo {
     border: 1px solid #1985A1;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
     margin-right: 1.3em;
+    color: #380b61;
 }
 .campo select option{
     padding-right: 1em;
@@ -121,7 +122,7 @@ fieldset.grupo {
 }
 .botao {
     font-size: 1.2em;
-    background: #380b61;
+    background: #1985A1;
     border: 0;
     margin-bottom: 1em;
     color: #ffffff;
@@ -131,16 +132,27 @@ fieldset.grupo {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    width: 125px;
+    height: 30px;
+    transition: 0.3s;
 }
 .botao:hover {
-    background-color: #E2C044;
+    background-color: #380b61;
     color: #F4F4F9;
+    width: 140px;
+    height: 35px;
     box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
     text-shadow: none;
+    margin-bottom: 0.75em;
+    transition: 0.3s;
 }
 
 #check {
     margin-left: 1.3em;
     display: inline-block;
+}
+
+footer {
+    color: #F4F4F9;
 }
 
